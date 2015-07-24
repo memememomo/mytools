@@ -23,3 +23,5 @@ do
     chmod 755 ./bin/$file
     ./bin/$file
 done
+
+cd src/go-uuid && go build -o $TO_DIR/gen-uuid main.go && chmod 755 $TO_DIR/gen-uuid
