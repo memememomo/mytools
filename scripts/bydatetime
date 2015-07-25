@@ -1,2 +1,6 @@
 #!/bin/bash
-mkdir `date +"%Y%m%d%I%M%S"`
+NAME=`date +"%Y%m%d%I%M%S"`
+if [ ! -d $NAME ];then
+    mkdir $NAME
+fi
+echo $NAME
